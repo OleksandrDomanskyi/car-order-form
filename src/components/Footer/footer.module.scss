@@ -1,0 +1,84 @@
+@import '../../styles/main.scss';
+
+footer {
+    padding: 10px 0;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    color: var(--footer-text-color);
+    background-color: var(--footer-background-color);
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.text {
+    margin-left: 4px;
+}
+
+.link {
+    color: var(--footer-text-color);
+
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.item {
+    color: var(--accent-color);
+}
+
+.contacts {
+    color: inherit;
+}
+
+.icon {
+    margin-left: 8px;
+    margin-right: 4px;
+
+
+    animation: heart 1s infinite;
+}
+
+.icon:hover {
+    animation: heartblow 5s infinite;
+}
+
+@keyframes heart {
+    50% {
+        transform: scale(1.5)
+    }
+}
+
+@keyframes heartblow {
+    0% {
+        transform: scale(1)
+    }
+
+    20% {
+        transform: scale(2.3)
+    }
+
+    40% {
+        transform: scale(1)
+    }
+
+    60% {
+        transform: scale(2.3)
+    }
+
+    80% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(2.3)
+    }
+}

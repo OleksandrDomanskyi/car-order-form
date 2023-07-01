@@ -1,0 +1,16 @@
+@import '../../../styles/main.scss';
+
+.cell {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.year {
+    text-align: center;
+}
+
+.availability {
+    text-align: center;
+}

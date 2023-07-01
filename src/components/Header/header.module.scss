@@ -1,0 +1,32 @@
+@import '../../styles/main.scss';
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    padding: 0;
+
+    color: var(--text-color-main);
+
+
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    border-bottom: 1px solid #ececec;
+}
+
+.container {
+    padding: 0;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, #00b9ff 50%, #ffb800 50%, #ffb800);
+}

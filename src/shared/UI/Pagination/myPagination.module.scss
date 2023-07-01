@@ -1,0 +1,40 @@
+@import '../../../styles/main.scss';
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pageButton {
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: var(--button-primary-color);
+    border: none;
+    color: var(--button-secondary-color);
+    padding: 4px 8px;
+    margin: 5px;
+    cursor: pointer;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--button-primary-color);
+        background-color: var(--button-secondary-color);
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+}
+
+.activePage {
+    background-color: var(--button-secondary-color);
+    color: var(--button-primary-color);
+}
