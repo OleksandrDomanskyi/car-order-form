@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/car-order-form/static/css/main.c8de19d5.css",
+    "main.js": "/car-order-form/static/js/main.1c6ef126.js",
+    "static/css/576.bca62aaf.chunk.css": "/car-order-form/static/css/576.bca62aaf.chunk.css",
+    "static/js/576.7b2e6818.chunk.js": "/car-order-form/static/js/576.7b2e6818.chunk.js",
+    "static/js/693.674f527a.chunk.js": "/car-order-form/static/js/693.674f527a.chunk.js",
+    "index.html": "/car-order-form/index.html",
+    "main.c8de19d5.css.map": "/car-order-form/static/css/main.c8de19d5.css.map",
+    "main.1c6ef126.js.map": "/car-order-form/static/js/main.1c6ef126.js.map",
+    "576.bca62aaf.chunk.css.map": "/car-order-form/static/css/576.bca62aaf.chunk.css.map",
+    "576.7b2e6818.chunk.js.map": "/car-order-form/static/js/576.7b2e6818.chunk.js.map",
+    "693.674f527a.chunk.js.map": "/car-order-form/static/js/693.674f527a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8de19d5.css",
+    "static/js/main.1c6ef126.js"
+  ]
+}
