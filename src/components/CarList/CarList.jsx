@@ -1,13 +1,11 @@
-import { useEffect, useState } from "react";
 import { usePagination } from "../../shared/hooks/usePagination";
-import axios from "axios";
 
 import CarListItem from "./CarListItem/CarListItem";
 import MyPagination from "../../shared/UI/Pagination/MyPagination";
 
 import s from './carList.module.scss';
 
-const CarList = ({ cars, setCars, filter }) => {
+const CarList = ({ cars, setCars }) => {
 
   const itemsPerPage = 10;
   const { currentPage, goToPage, goToNextPage, goToPreviousPage } = usePagination(1);

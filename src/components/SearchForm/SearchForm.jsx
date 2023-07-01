@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import MyInput from '../../shared/UI/Input/MyInput';
 
 import s from './searchForm.module.scss';

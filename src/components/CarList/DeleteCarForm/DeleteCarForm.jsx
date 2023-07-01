@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import MyButton from "../../../shared/UI/Button/MyButton";
 
 import s from './deleteCarForm.module.scss';

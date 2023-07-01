@@ -5,7 +5,7 @@ import AddForm from "../../components/AddForm/AddForm";
 import CarList from "../../components/CarList/CarList";
 import Loader from "../../shared/UI/Loader/Loader";
 import { useFilteredCars } from "../../shared/hooks/useFilteredCars";
-import { useFetching } from "../../shared/hooks/useFeyching";
+import { useFetching } from "../../shared/hooks/useFetching";
 
 import CarService from "../../API/CarService";
 
@@ -23,6 +23,7 @@ function CarListPage() {
 
   useEffect(() => {
     fetchCars();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

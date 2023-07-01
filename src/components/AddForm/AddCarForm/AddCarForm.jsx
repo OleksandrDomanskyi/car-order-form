@@ -7,44 +7,34 @@ import s from './addCarForm.module.scss'
 
 const AddCarForm = ({create, closeModal}) => {
 
-    const [car, setCar] = useState(
-        {
-            car: '',
-            car_model: '',
-            car_vin: '',
-            car_color: '',
-            car_model_year: '',
-            price: '',
-            availability: ''
-        }
-    );
+    const initialCarState =
+    {
+        car: '',
+        car_model: '',
+        car_vin: '',
+        car_color: '',
+        car_model_year: '',
+        price: '',
+        availability: ''
+    };
+
+    const [car, setCar] = useState(initialCarState);
 
     const addNewCar = (e) => {
-        e.preventDefault()
-        const newCar = { ...car, id: Date.now() }
-        create(newCar)
-        setCar({
-            car: '',
-            car_model: '',
-            car_vin: '',
-            car_color: '',
-            car_model_year: '',
-            price: '',
-            availability: ''
-        })
+        e.preventDefault();
+        const newCar = { ...car, id: Date.now() };
+        create(newCar);
+        setCar(initialCarState);
     }
 
     const handleCloseModal = () => {
-        setCar({
-            car: '',
-            car_model: '',
-            car_vin: '',
-            car_color: '',
-            car_model_year: '',
-            price: '',
-            availability: ''
-        });
+        setCar(initialCarState);
         closeModal();
+    };
+
+    const handleInputChange = (e, fieldName) => {
+        const updatedCar = { ...car, [fieldName]: e.target.value };
+        setCar(updatedCar);
     };
 
     return (
@@ -53,49 +43,49 @@ const AddCarForm = ({create, closeModal}) => {
                 className={s.myInput}
                 value={car.car}
                 type='text'
-                onChange={e => setCar({...car, car: e.target.value})}
+                onChange={(e) => handleInputChange(e, 'car')}
                 placeholder="Company"
             />
             <MyInput
                 className={s.myInput}
                 value={car.car_model}
                 type='text'
-                onChange={e => setCar({...car, car_model: e.target.value})}
+                onChange={(e) => handleInputChange(e, 'car_model')}
                 placeholder="Model"
             />
             <MyInput
                 className={s.myInput}
                 value={car.car_vin}
                 type='text'
-                onChange={e => setCar({...car, car_vin: e.target.value})}
+                onChange={(e) => handleInputChange(e, 'car_vin')}
                 placeholder="VIN"
             />
             <MyInput
                 className={s.myInput}
                 value={car.car_model_year}
                 type='text'
-                onChange={e => setCar({...car, car_model_year: e.target.value})}
+                onChange={(e) => handleInputChange(e, 'car_model_year')}
                 placeholder="Year"
             />
             <MyInput
                 className={s.myInput}
                 value={car.car_color}
                 type='text'
-                onChange={e => setCar({...car, car_color: e.target.value})}
+                onChange={(e) => handleInputChange(e, 'car_color')}
                 placeholder="Color"
             />
             <MyInput
                 className={s.myInput}
                 value={car.price}
                 type='text'
-                onChange={e => setCar({...car, price: e.target.value})}
+                onChange={(e) => handleInputChange(e, 'price')}
                 placeholder="Price"
             />
             <MyInput
                 className={s.myInput}
                 value={car.availability}
                 type='text'
-                onChange={e => setCar({...car, availability: e.target.value})}
+                onChange={(e) => handleInputChange(e, 'availability')}
                 placeholder="Availability"
             />
             <div className={s.btnContainer}>

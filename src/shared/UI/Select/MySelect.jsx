@@ -1,5 +1,3 @@
-import PropTypes from "prop-types";
-
 const MySelect = ({options, defaultValue, value, onChange}) => {
     return (
         <select
@@ -17,7 +15,3 @@ const MySelect = ({options, defaultValue, value, onChange}) => {
 };
 
 export default MySelect;
-
-MySelect.propTypes = {
-
-};
